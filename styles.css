@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(252, 251, 249);
+}
+
+@font-face {
+    font-family: 'GenshinText';
+    src: url('./fonts/zh-cn.ttf') format('ttf'),
+}
+
+.h2Div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.teamName {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin: 10px;
+}
+
+.h2Div p {
+    width: 80%;
+}
+
+/* Estilos del navbar */
+nav {
+    background-color: #3274c9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav .menuButton {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+nav img {
+    max-height: 40px;
+}
+
+nav .menuButton:hover {
+    background-color: #4b83cc;
+    border-radius: 2px;
+}
+
+/* Estilos del hero section */
+.hero-section {
+    background: linear-gradient(rgba(70, 70, 70, 0.329), rgba(112, 112, 112, 0.226)), url("./images/genshin-impact-scenery-uhdpaper.com-hd-3.2969.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: GenshinText;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background-color: #3274c9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #4b83cc;
+}
+
+/* Estilos de las cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 350px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.card p {
+    padding: 10px;
+    margin: 0;
+}
+
+.parrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+.parrafo p {
+    text-align: center;
+    width: 80%;
+}
+
+/* Tres imagenes */
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.infoSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoSection img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.infoSection iframe {
+    border-radius: 5px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.infoSection p {
+    width: 50%;
+    text-align: justify;
+    margin: 0;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.masonry-container {
+    column-count: 3;
+    column-gap: 15px;
+    margin: 20px;
+}
+
+.masonry-item {
+    break-inside: avoid-column;
+    margin-bottom: 15px;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Style for form labels and inputs */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form div {
+    margin: 0px 10px;
+}
+
+/* Add some styling for the submit button */
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+hr {
+    width: 70%;
+    margin: 20px auto;
+    color: #3273c98c;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+}
+
+footer img {
+    height: 5vh;
+}
+
+footer button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #6790c7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #3274c9;
+}
